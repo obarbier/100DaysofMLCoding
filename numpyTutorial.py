@@ -1,0 +1,31 @@
+import numpy as np
+a = np.arange(15).reshape(3,5)
+b = np.array([6, 7, 8])
+print("Print Shape")
+print( a.shape)
+print("Print dimenssion")
+print( a.ndim)
+print("Print datatype")
+print( a.dtype.name)
+print("Print ItemSize : the size in bytes of each element of the array. For example, an array of elements of type float64 has itemsize 8 (=64/8)")
+print( a.itemsize)
+print("Print type")
+print( type(a))
+print("Print type")
+print( type(b))
+print("Basic Operations")
+a = np.array( [20,30,40,50] )
+b = np.arange( 4 )
+c = a-b
+print(c)
+print(b**2)
+print(10*np.sin(a))
+print( a<35)
+A = np.array( [[1,1],[0,1]] )
+B = np.array( [[2,0],[3,4]] )
+print( "element wise Product")
+print( A * B ) # element wise Product
+print(" Matrix wise Product")
+print( A @ B ) # Matrix wise Product
+print(" Matrix wise Product")
+print( A.dot(B) ) # Matrix wise Product
