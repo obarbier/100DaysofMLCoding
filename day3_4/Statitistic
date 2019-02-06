@@ -1,0 +1,45 @@
+Courses: https://newonlinecourses.science.psu.edu/stat501/node/251/
+
+Simple linear regression is a statistical method that allows us to summarize and study relationships between two continuous (quantitative) variables:
+    One variable, denoted x, is regarded as the predictor, explanatory, or independent variable.
+    The other variable, denoted y, is regarded as the response, outcome, or dependent variable.
+    
+Type of relationShip
+     1) Deterministic (or functional) relationships:
+         Example: 
+             Circumference = π × diameter
+             Hooke's Law: Y = α + βX, where Y = amount of stretch in a spring, and X = applied weight.
+            Ohm's Law: I = V/r, where V = voltage applied, r = resistance, and I = current.
+            Boyle's Law: For a constant temperature, P = α/V, where P = pressure, α = constant for each gas, and V = volume of gas.
+      2) statistical relationships, in which the relationship between the variables is not perfect.
+
+Best Fitting Line
+    A.K.A Best Summarization of the trend
+    Because it's a estimation there will be "prediction error" (or "residual error") : Which is the difference between actual quatity and observed quatity. Therefore the best estimation is one for which the n prediction error are as small as possible in some overall sense. 
+    How do we achieve that? ans: least squares criterio
+    The best way is to minimize the sum of the squared prediction errors. But to try every multiple line would be impossible. Best approached is to use calculus to find the least squares estimates. the only assumption is that the estimated reression equation follow a linear data. 
+    additional concept
+        Extrapolated and scope of the model
+        
+summarize the four conditions that comprise "the simple linear regression model:" 9LINE)
+
+The mean of the response, at each value of the predictor is a Linear function of the value of the predictor: The mean of the error at each value of the predictor is zero
+The errors, εi, are Independent. 
+The errors, εi, at each value of the predictor are Normally distributed.
+The errors, εi, at each value of the predictor have Equal variances    
+
+Common Error Variace
+Why should we care about Variance, σ2? The answer to this question pertains to the most common use of an estimated regression line, namely predicting some future response.
+
+Suppose you have two brands (A and B) of thermometers, and each brand offers a Celsius thermometer and a Fahrenheit thermometer. You measure the temperature in Celsius and Fahrenheit using each brand of thermometer on ten different days. Based on the resulting data, you obtain two estimated regression lines — one for brand A and one for brand B. You plan to use the estimated regression lines to predict the temperature in Fahrenheit based on the temperature in Celsius.
+
+Will this thermometer brand (A) yield more precise future predictions …? … or this one (B)?
+
+To get an idea, therefore, of how precise future predictions would be, we need to know how much the responses (y) vary around the (unknown) mean population 
+The sample variance (s): estimates σ2, the variance of the one population. The estimate is really close to being like an average.
+The mean square error(MSE): estimates σ2, the common variance of the many subpopulations.
+
+How does the mean square error formula differ from the sample variance formula? The similarities are more striking than the differences. The numerator again adds up, in squared units, how far each response yi is from its estimated mean. In the regression setting, though, the estimated mean i And, the denominator divides the sum by n-2, not n-1, because in using  to estimate  μY, we effectively estimate two parameters — the population intercept β0 and the population slope β1. That is, we lose two degrees of freedom.
+S=√MSE , which estimates σ and is known as the regression standard error or the residual standard error.
+
+-------END (More Can be learn in the above URL) Thank you PennState University
